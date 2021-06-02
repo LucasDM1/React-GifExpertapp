@@ -4,11 +4,12 @@ import { shallow } from 'enzyme';
 import { GifGridItem } from '../../src/components/GifGridItem';
 
 describe('Pruebas eb <GifGridItem />', () => {
+
     
-    const wrapper = shallow(<GifGridItem />)
 
     test('Debe mostrar GifGridItem correctamente', () => {
-
+        
+        const wrapper = shallow( <GifGridItem />)
         expect(wrapper).toMatchSnapshot()
         
     })
